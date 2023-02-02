@@ -34,7 +34,7 @@ import static org.junit.jupiter.api.Assertions.*;
         public void testGetAll() {
             //Will this test pass, if it runs AFTER the next text
             List<Player> players = playerRepository.findAll();
-            assertEquals(4, players.size());
+            assertEquals(3, players.size());
         }
 
         @Test

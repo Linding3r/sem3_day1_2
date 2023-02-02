@@ -10,18 +10,13 @@ import sem3.day1_2.repositories.PlayerRepository;
 @RequestMapping("/api/players")
 public class PlayerController {
 
-
     PlayerRepository playerRepository;
-
 
     public PlayerController(PlayerRepository playerRepository) {
         this.playerRepository = playerRepository;
     }
 
-
     @GetMapping
-    Iterable<Player> getPlayers() {
-       return playerRepository.findAll();
-    }
+    Iterable<Player> getPlayers() { return playerRepository.findAll();}
 }
 
